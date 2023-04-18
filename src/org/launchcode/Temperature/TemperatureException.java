@@ -1,5 +1,9 @@
 package org.launchcode.Temperature;
 
-public class TemperatureException {
+//all custom exceptions must inherit from the Exception class
+public class TemperatureException extends Exception {
     // Write code here!
+    public TemperatureException(String message){
+        super(message);
+    }
 }
